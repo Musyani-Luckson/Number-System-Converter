@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Number System Converter</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> -->
+
+	<!-- <link rel="Stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" /> -->
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark text-light body">
+	<div class="calculaterBox">
+		<h1 class="p-3 m-2">
+			Number System Converter
+		</h1>
+		<!-- Form One -->
+		<div class="formOne">
+
+			<!-- Form for from -->
+			<div class="form-floating text-dark">
+				<select class="form-select forms" id="sel1" name="sellist">
+					<option value="binary">
+						Base 2 (Binary)
+					</option>
+					<option value="octal">
+						Base 8 (Octal)
+					</option>
+					<option value="decimal">
+						Base 10 (Decimal)
+					</option>
+					<option value="hexadecimal">
+						Base 16 (Hexadecimal)
+					</option>
+				</select>
+				<label for="sel1" class="form-label">
+					From Base
+				</label>
+			</div>
+			<!-- Form for to -->
+			<div class="form-floating text-dark">
+				<select class="form-select forms" id="sel1" name="sellist">
+					<option value="binary">
+						Base 2 (Binary)
+					</option>
+					<option value="octal">
+						Base 8 (Octal)
+					</option>
+					<option value="decimal" selected>
+						Base 10 (Decimal)
+					</option>
+					<option value="hexadecimal">
+						Base 16 (Hexadecimal)
+					</option>
+				</select>
+				<label for="sel1" class="form-label">
+					To Base
+				</label>
+			</div>
+		</div>
+
+		<div class="formTwo text-dark">
+			<div class="form-floating">
+				<input type="text" class="form-control forms" id="number" placeholder="Enter number" name="number">
+				<label for="number">
+					Enter number
+				</label>
+			</div>
+			<div class="form-floating">
+				<input disabled="true" type="text" class="form-control" id="answer" placeholder="Answer" name="answer">
+				<label for="answer">Answer</label>
+			</div>
+		</div>
+
+	</div>
+	<script type="module" src="main.js"></script>
+</body>
+
+</html>
