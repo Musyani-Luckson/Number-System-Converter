@@ -11,7 +11,7 @@
 		align-items: center;
 	}
 
-	.calculaterBox {
+	.calculatorBox {
 		position: absolute;
 		top: 0;
 		bottom: 0;
@@ -38,3 +38,13 @@
 		font-size: 24pt;
 	}
 
+	.form-floating>i {
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 0.65rem 0.65rem;
+		transition: filter .2s ease-in-out;
+	}
+	.form-floating>i:hover {
+		filter: brightness(200%);
+	}

@@ -171,7 +171,7 @@ for (let i = 0; i < forms.length; i++) {
 		const numberSystem = new NumberSystem();
 		const operation = getConverstion(forms[0].value, forms[1].value);
 		if (numberSystem[operation] != undefined) {
-			const answer = numberSystem[operation](number.value.trim())
+			const answer = numberSystem[operation](number.value.trim());
 			answerDisplay.value = answer;
 		} else {
 			answerDisplay.value = '';
@@ -181,8 +181,8 @@ for (let i = 0; i < forms.length; i++) {
 
 
 function getConverstion(from, to) {
-	let conversion = null
-	return `${from}To${capitalizeFirstLetter(to)}`
+	let conversion = null;
+	return `${from}To${capitalizeFirstLetter(to)}`;
 }
 
 function capitalizeFirstLetter(word) {
@@ -191,3 +191,9 @@ function capitalizeFirstLetter(word) {
 	}
 	return word.charAt(0).toUpperCase() + word.slice(1);
 }
+
+hp.getDom("#copy").addEventListener("click", () => {
+	const copyText = answerDisplay.value;
+  
+	navigator.clipboard.writeText(copyText);
+});

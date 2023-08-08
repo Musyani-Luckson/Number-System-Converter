@@ -1,5 +1,4 @@
 # Number-System-Converter
-# Number-System-Converter
 
 Welcome to the Number-System-Converter repository! This repository contains a versatile number system converter tool that allows you to convert numbers between different bases. Whether you need to convert a number from base 2 (binary) to base 16 (hexadecimal) or from base 10 (decimal) to base 8 (octal), this tool has you covered.
 
@@ -19,7 +18,7 @@ To get started with the Number-System-Converter, follow these steps:
 1. Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/Number-System-Converter.git
+git clone https://github.com/Musyani-Luckson/Number-System-Converter.git
 ```
 
 2. Open the project directory:
